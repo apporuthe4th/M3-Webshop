@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.typekit.net/mkx0nzt.css" />
+    <link rel="stylesheet" type="text/css" href="Listing.css" />
+    <title>Retro.Li</title>
+  </head>
+  <body>
+    <div class="parent">
+      <nav class="nav_top nav_menu_top">
+        <section>
+          <div class="button_left">
+            <div class="buttons">
+              <button>For You</button>
+              <button>All</button>
+              <button>Trending</button>
+            </div>
+            <div class="buttons">
+              <button>Filters</button>
+              <button>Something</button>
+            </div>
+          </div>
+          <div class="buttons">
+            <button>%</button>
+            <button>?</button>
+          </div>
+          <input
+            type="text"
+            style="
+              width: 80%;
+              height: 40px;
+              margin: auto;
+              border-radius: 50px;
+              border: 2px solid black;
+              margin-bottom: 10px;
+              text-align: center;
+              order: 4;
+            "
+          />
+        </section>
+      </nav>
+      <nav class="nav_left nav_menu_side_left"></nav>
+      <nav class="nav_right nav_menu_side_right"></nav>
+      <div class="content">
+        <main>
+          <ul class="no-bullets">
+            <li>ONE</li>
+            <li>two</li>
+            <li>THREE</li>
+          </ul>
+        </main>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    let stift1 = {
+      kleur: "groen",
+      dop: false,
+    };
+
+    let stift2 = {
+      kleur: "bread",
+      dop: true,
+    };
+
+    let auto1 = {
+      kleur: "greb",
+      merk: "bmw",
+      hoeveelheidWielen: 4,
+      toeteren() {
+        console.log("FUUUUCKKKKKKKKKK");
+      },
+    };
+
+    let auto2 = {
+      kleur: "orange",
+      merk: "cat",
+      hoeveelheidWielen: 4,
+      toeteren() {
+        console.log("meow :3");
+      },
+    };
+    auto2.toeteren();
+    str = JSON.stringify(stift1);
+    console.log(str);
+  </script>
+</html>
