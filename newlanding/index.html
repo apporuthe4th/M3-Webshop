@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.typekit.net/mkx0nzt.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/mkx0nzt.css" />
+    <title>Retro.Li</title>
+  </head>
+
+  <body>
+    <nav>
+      <section>
+        <ul id="nav-logos">
+          <li class="nav-button">
+            <img src="Assets\tempicon (1).svg" alt="1" />
+          </li>
+          <li class="nav-button">
+            <img src="Assets\tempicon (2).svg" alt="2" />
+          </li>
+          <li class="nav-button">
+            <img src="Assets\tempicon (3).svg" alt="3" />
+          </li>
+        </ul>
+
+        <h1>Retro.Li</h1>
+
+        <ul class="utility">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#shopping">Shopping</a></li>
+          <li><a href="cart/cart.html">Cart</a></li>
+          <li><a href="#credits">Credits</a></li>
+          <li><a href="#cat">cat</a></li>
+        </ul>
+      </section>
+    </nav>
+    <section class="head-discount">
+      <div class="discount-line-box">
+        <div class="discount-line"></div>
+        <div class="discount-line"></div>
+        <div class="discount-line"></div>
+      </div>
+      <!-- <div class="discount-text slide-right">
+        <span>50% Off - If you're gonna buy</span>
+        <span>BUY IT NOW!!</span>
+      </div> -->
+    </section>
+    <header>
+      <section class="parent">
+        <section class="head-image">
+          <img id="mac-paint" src="Assets\macmspaint.jpg" alt="paint" />
+        </section>
+        <section class="head-text">
+          <section>
+            <span>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+              odit temporibus culpa neque corporis facere. Cupiditate non modi
+              perspiciatis facilis deleniti voluptate nemo nobis neque
+              praesentium molestiae. Ipsa, culpa soluta! Lorem ipsum dolor sit
+              amet consectetur adipisicing elit. Quis, numquam repellendus. Ab
+              dolore ratione placeat natus fuga earum omnis ducimus ut. Vero,
+              veniam expedita. Neque, quia eos. Non, ea quos! Lorem ipsum dolor
+              sit amet consectetur, adipisicing elit. Assumenda quod autem vitae
+              nostrum perspiciatis repudiandae aliquam fugiat qui vel. In eius
+              quo nisi magnam hic quis fugiat deleniti fugit vero?
+            </span>
+
+            <h1>FAQ: More Questions!</h1>
+
+            <span>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi ut
+              veniam aspernatur sunt, aliquid est odio molestiae ullam dolores
+              dolorem ratione beatae esse minima, velit voluptatem quos quidem
+              ipsam deleniti? Lorem ipsum, dolor sit amet consectetur
+              adipisicing elit. Dignissimos adipisci suscipit molestiae? Ab,
+              dolore. Quidem incidunt, quae sunt voluptatum aliquam quisquam eum
+              earum voluptatibus itaque error aut necessitatibus, esse ipsa.
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Distinctio dolores velit, aut aspernatur labore veritatis vel
+              eligendi iusto, voluptate mollitia ipsum minima maiores totam
+              commodi possimus, asperiores inventore temporibus! Consequuntur.
+            </span>
+          </section>
+        </section>
+      </section>
+    </header>
+
+    <main>
+      <main>
+        <div class="menubar">
+          <div class="menubar-item"><span class="apple-logo">R.LI</span></div>
+          <div class="menubar-item">File</div>
+          <div class="menubar-item">Edit</div>
+          <div class="menubar-item">hihi</div>
+          <div class="menubar-item">moar</div>
+          <div class="menubar-item">catpics</div>
+          <div class="menubar-item">cat</div>
+        </div>
+
+        <div class="window-wrap">
+          <div class="window">
+            <div class="window-titlebar">
+              <div class="titlebar-close"></div>
+              <div class="titlebar-title">shop all listings</div>
+              <div class="titlebar-scroll"></div>
+            </div>
+
+            <div class="toolbar">
+              <input
+                class="searchbar"
+                type="text"
+                placeholder="Search items..."
+                id="searchInput"
+              />
+              <button class="filter-btn active" data-cat="all">All</button>
+              <button class="filter-btn" data-cat="vintage">Vintage</button>
+              <button class="filter-btn" data-cat="digital">Digital</button>
+              <button class="filter-btn" data-cat="hardware">Hardware</button>
+              <button class="filter-btn" data-cat="software">Software</button>
+              <select class="sort-select" id="sortSelect">
+                <option value="default">Sort: Default</option>
+                <option value="price-asc">Price: Low → High</option>
+                <option value="price-desc">Price: High → Low</option>
+                <option value="name">Name: A → Z</option>
+              </select>
+              <span class="item-count" id="itemCount">12 items</span>
+            </div>
+
+            <div class="shop-layout">
+              <div class="sidebar">
+                <div class="sidebar-section">
+                  <p class="sidebar-title">Category</p>
+                  <div class="sidebar-item checked" data-filter="all">
+                    All Items
+                  </div>
+                  <div class="sidebar-item" data-filter="vintage">Vintage</div>
+                  <div class="sidebar-item" data-filter="digital">Digital</div>
+                  <div class="sidebar-item" data-filter="hardware">
+                    Hardware
+                  </div>
+                  <div class="sidebar-item" data-filter="software">
+                    Software
+                  </div>
+                </div>
+                <div class="sidebar-section">
+                  <p class="sidebar-title">Price</p>
+                  <div class="price-range-wrap">
+                    <input
+                      type="range"
+                      min="0"
+                      max="200"
+                      value="200"
+                      id="priceRange"
+                    />
+                    <div class="price-range-labels">
+                      <span>€0</span>
+                      <span id="priceLabel">€200</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="sidebar-section">
+                  <p class="sidebar-title">Condition</p>
+                  <div class="sidebar-item checked">Mint</div>
+                  <div class="sidebar-item checked">Good</div>
+                  <div class="sidebar-item">Fair</div>
+                  <div class="sidebar-item">Parts</div>
+                </div>
+                <div class="sidebar-section">
+                  <p class="sidebar-title">Availability</p>
+                  <div class="sidebar-item checked">In Stock</div>
+                  <div class="sidebar-item">Pre-order</div>
+                  <div class="sidebar-item">Sold Out</div>
+                </div>
+              </div>
+              <div class="main-content">
+                <div class="listings-body">
+                  <div class="listings-grid" id="listingsGrid"></div>
+                </div>
+                <div class="pagination">
+                  <button class="page-btn">&#9664;</button>
+                  <button class="page-btn active">1</button>
+                  <button class="page-btn">2</button>
+                  <button class="page-btn">3</button>
+                  <button class="page-btn">&#9654;</button>
+                </div>
+              </div>
+            </div>
+            <div class="statusbar">
+              <span class="statusbar-seg">12 items found</span>
+              <span class="statusbar-seg">Page 1 of 3</span>
+              <span class="statusbar-seg">Sorted by: Default</span>
+              <span>Free shipping on orders over €50</span>
+            </div>
+          </div>
+        </div>
+      </main>
+    </main>
+  </body>
+
+  <script>
+    const products = [
+      {
+        id: 1,
+        name: "Macintosh SE/30",
+        category: "hardware",
+        price: 149,
+        desc: "Classic compact Mac, fully restored.",
+        pattern: "pattern-3",
+        badge: "RESTORED",
+        icon: "&#9632;",
+      },
+      {
+        id: 2,
+        name: "System 7 Floppy Set",
+        category: "software",
+        price: 24,
+        desc: "Original installation disks, working.",
+        pattern: "pattern-2",
+        badge: null,
+        icon: "&#9651;",
+      },
+      {
+        id: 3,
+        name: "ADB Keyboard M0116",
+        category: "hardware",
+        price: 55,
+        desc: "Apple Desktop Bus keyboard, beige.",
+        pattern: "pattern-5",
+        badge: "RARE",
+        icon: "&#9644;",
+      },
+      {
+        id: 4,
+        name: "HyperCard Stack Pack",
+        category: "digital",
+        price: 18,
+        desc: "Collection of classic HyperCard stacks.",
+        pattern: "pattern-4",
+        badge: null,
+        icon: "&#9670;",
+      },
+      {
+        id: 5,
+        name: "Mac Classic Poster",
+        category: "vintage",
+        price: 35,
+        desc: "Original 1984 Think Different print.",
+        pattern: "pattern-1",
+        badge: "NEW",
+        icon: "&#9679;",
+      },
+      {
+        id: 6,
+        name: "ImageWriter II",
+        category: "hardware",
+        price: 89,
+        desc: "Dot matrix printer, ribbon included.",
+        pattern: "pattern-6",
+        badge: null,
+        icon: "&#9632;",
+      },
+      {
+        id: 7,
+        name: "System 6 Manual",
+        category: "vintage",
+        price: 22,
+        desc: "Original Apple user guide, clean.",
+        pattern: "pattern-3",
+        badge: null,
+        icon: "&#9651;",
+      },
+      {
+        id: 8,
+        name: "PageMaker 1.0 Box",
+        category: "software",
+        price: 44,
+        desc: "Sealed original box, historical piece.",
+        pattern: "pattern-2",
+        badge: "SEALED",
+        icon: "&#9644;",
+      },
+      {
+        id: 9,
+        name: "Mac Mouse G5431",
+        category: "hardware",
+        price: 29,
+        desc: "One-button mechanical mouse, clean.",
+        pattern: "pattern-4",
+        badge: null,
+        icon: "&#9670;",
+      },
+      {
+        id: 10,
+        name: "Retro Icon Set",
+        category: "digital",
+        price: 12,
+        desc: "512 hand-drawn bitmap icons, PNG.",
+        pattern: "pattern-1",
+        badge: null,
+        icon: "&#9679;",
+      },
+      {
+        id: 11,
+        name: "Mac512K Motherboard",
+        category: "hardware",
+        price: 65,
+        desc: "Pulled and tested, working board.",
+        pattern: "pattern-5",
+        badge: "TESTED",
+        icon: "&#9632;",
+      },
+      {
+        id: 12,
+        name: "MacPaint Art Print",
+        category: "vintage",
+        price: 19,
+        desc: "High quality A3 print on heavy paper.",
+        pattern: "pattern-6",
+        badge: null,
+        icon: "&#9651;",
+      },
+    ];
+
+    let currentCat = "all";
+    let currentSearch = "";
+    let currentSort = "default";
+    let maxPrice = 200;
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+    function addToCart(productId) {
+      const product = products.find(p => p.id === productId);
+      if (product) {
+        cart.push(product);
+        localStorage.setItem('cart', JSON.stringify(cart));
+        alert('Added to cart!');
+      }
+    }
+
+    function renderCards() {
+      const grid = document.getElementById("listingsGrid");
+      let filtered = products.filter((p) => {
+        const catMatch = currentCat === "all" || p.category === currentCat;
+        const searchMatch =
+          p.name.toLowerCase().includes(currentSearch) ||
+          p.desc.toLowerCase().includes(currentSearch);
+        const priceMatch = p.price <= maxPrice;
+        return catMatch && searchMatch && priceMatch;
+      });
+
+      if (currentSort === "price-asc")
+        filtered.sort((a, b) => a.price - b.price);
+      else if (currentSort === "price-desc")
+        filtered.sort((a, b) => b.price - a.price);
+      else if (currentSort === "name")
+        filtered.sort((a, b) => a.name.localeCompare(b.name));
+
+      document.getElementById("itemCount").textContent =
+        filtered.length + " items";
+
+      grid.innerHTML = filtered
+        .map(
+          (p) => `
+          <div class="product-card">
+            ${p.badge ? `<div class="card-badge">${p.badge}</div>` : ""}
+            <div class="card-image-wrap ${p.pattern}">
+              <div class="card-icon-bg">
+                <svg width="50" height="50" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="50" height="50" fill="white"/>
+                  <text x="25" y="36" text-anchor="middle" font-size="28" font-family="monospace">${p.icon}</text>
+                </svg>
+              </div>
+              <div class="card-hover-overlay">ADD TO CART</div>
+            </div>
+            <div class="card-body">
+              <div class="card-category">${p.category}</div>
+              <p class="card-name">${p.name}</p>
+              <p class="card-desc">${p.desc}</p>
+              <div class="card-footer">
+                <span class="card-price">€${p.price}</span>
+                <button class="add-to-cart">+ CART</button>
+              </div>
+            </div>
+          </div>
+        `,
+        )
+        .join("");
+    }
+
+    // Filter buttons (toolbar)
+    document.querySelectorAll(".filter-btn").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        document
+          .querySelectorAll(".filter-btn")
+          .forEach((b) => b.classList.remove("active"));
+        btn.classList.add("active");
+        currentCat = btn.dataset.cat;
+        renderCards();
+      });
+    });
+
+    // Sidebar filter items
+    document.querySelectorAll(".sidebar-item[data-filter]").forEach((item) => {
+      item.addEventListener("click", () => {
+        document
+          .querySelectorAll(".sidebar-item[data-filter]")
+          .forEach((i) => i.classList.remove("checked"));
+        item.classList.add("checked");
+        currentCat = item.dataset.filter;
+        document.querySelectorAll(".filter-btn").forEach((b) => {
+          b.classList.toggle("active", b.dataset.cat === currentCat);
+        });
+        renderCards();
+      });
+    });
+
+    // Search
+    document.getElementById("searchInput").addEventListener("input", (e) => {
+      currentSearch = e.target.value.toLowerCase();
+      renderCards();
+    });
+
+    // Sort
+    document.getElementById("sortSelect").addEventListener("change", (e) => {
+      currentSort = e.target.value;
+      renderCards();
+    });
+
+    // Price range
+    document.getElementById("priceRange").addEventListener("input", (e) => {
+      maxPrice = parseInt(e.target.value);
+      document.getElementById("priceLabel").textContent = "€" + maxPrice;
+      renderCards();
+    });
+
+    // Condition / availability checkboxes
+    document
+      .querySelectorAll(".sidebar-item:not([data-filter])")
+      .forEach((item) => {
+        item.addEventListener("click", () => {
+          item.classList.toggle("checked");
+        });
+      });
+
+    renderCards();
+
+    // Add to cart event listener
+    document.addEventListener('click', (e) => {
+      if (e.target.classList.contains('add-to-cart')) {
+        const card = e.target.closest('.product-card');
+        const name = card.querySelector('.card-name').textContent;
+        const product = products.find(p => p.name === name);
+        if (product) {
+          addToCart(product.id);
+        }
+      }
+    });
+  </script>
+</html>

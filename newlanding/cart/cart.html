@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.typekit.net/mkx0nzt.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/mkx0nzt.css" />
+    <title>Retro.Li</title>
+  </head>
+
+  <body>
+    <nav>
+      <section>
+        <ul id="nav-logos">
+          <li class="nav-button">
+            <img src="Assets\tempicon (1).svg" alt="1" />
+          </li>
+          <li class="nav-button">
+            <img src="Assets\tempicon (2).svg" alt="2" />
+          </li>
+          <li class="nav-button">
+            <img src="Assets\tempicon (3).svg" alt="3" />
+          </li>
+        </ul>
+
+        <h1>Retro.Li</h1>
+
+        <ul class="utility">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../index.html#shopping">Shopping</a></li>
+          <li>Cart</li>
+          <li><a href="../index.html#credits">Credits</a></li>
+          <li><a href="../index.html#cat">cat</a></li>
+        </ul>
+      </section>
+    </nav>
+    <main>
+      <main class="window">
+        <section class="window-top">
+          <div class="top-square"></div>
+          <span>cart</span>
+          <div class="top-lines"></div>
+        </section>
+
+        <main class="window-box">
+          <section class="cart-listing-box">
+            <section class="cart-box">
+              <div class="cart-item"></div>
+            </section>
+            <section class="cart-box">
+              <div class="cart-item"></div>
+            </section>
+            <section class="cart-box">
+              <div class="cart-item"></div>
+            </section>
+            <section class="cart-box">
+              <div class="cart-item"></div>
+            </section>
+          </section>
+
+          <section class="shipping-box"></section>
+        </main>
+      </main>
+    </main>
+  </body>
+
+  <script>
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+    function renderCart() {
+      const cartItems = document.querySelectorAll('.cart-item');
+      cart.forEach((item, index) => {
+        if (cartItems[index]) {
+          cartItems[index].innerHTML = `
+            <div class="cart-product-name">${item.name}</div>
+            <div class="cart-product-price">€${item.price}</div>
+            <button class="remove-from-cart" data-index="${index}">Remove</button>
+          `;
+        }
+      });
+      // Clear remaining slots
+      for (let i = cart.length; i < cartItems.length; i++) {
+        cartItems[i].innerHTML = '';
+      }
+    }
+
+    // Remove from cart event listener
+    document.addEventListener('click', (e) => {
+      if (e.target.classList.contains('remove-from-cart')) {
+        const index = parseInt(e.target.dataset.index);
+        cart.splice(index, 1);
+        localStorage.setItem('cart', JSON.stringify(cart));
+        renderCart();
+      }
+    });
+
+    renderCart();
+  </script>
+</html>
